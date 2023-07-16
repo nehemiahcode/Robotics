@@ -26,7 +26,7 @@ function Settings() {
         aria-label="Settings"
         className="bg-sky-600 text-black text-3xl flex justify-center items-center fixed bottom-[30px] right-[20px] z-[99] rounded-full h-[50px] w-[50px]"
       >
-        <ion-icon name={icon ? 'pause' : 'play'} aria-hidden="true"></ion-icon>
+        <ion-icon name={icon ? 'pause-outline' : 'play-outline'} aria-hidden="true"></ion-icon>
       </div>
     </div>
   );
