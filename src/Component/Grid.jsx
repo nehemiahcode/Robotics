@@ -34,7 +34,7 @@ function Grids() {
           <div
             key={index}
             className={`
-         bg-slate-900 relative group w-[100%]
+         bg-white relative group w-[100%]
           ${grids.styles && "row-span-2 lg:h-[450px] h-[300px] w-[100%]"}
           ${grids.styles3 && "lg:h-[400px] h-[250px] w-[100%]"}
            ${grids.styles2 && "lg:h-[380px] h-[250px] w-[100%]"} flex items-center`}
