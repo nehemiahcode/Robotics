@@ -5,6 +5,10 @@ import Settings from "./Component/Settings"
 import Team from "./Component/Team"
 import Features from "./Component/Features"
 import Footer from "./Component/Footer"
+import Blog from "./Component/Blog"
+import Grids from "./Component/Grid"
+import Contact from "./Component/Contact"
+
 
 function App() {
 
@@ -17,9 +21,12 @@ function App() {
     <Settings/>
     <Team/>
     <Features/>
+    <Blog/>
+    <Grids/>
+    <Contact/>
     <Footer/>
     </>
   )
 }
 
-export default App
+export default App;

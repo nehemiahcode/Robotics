@@ -8,7 +8,7 @@ function Hero() {
   const { smallHeading, bigHeading, btnText, paragraph } = HeroData;
   return (
     <>
-      <section
+      <section id="home"
         className=" grid grid-cols-1 md:grid-cols-2 bg-gradient-to-b
          from-slate-900 via-black lg:pt-20 lg:px-16 pt-5 to-purple-950
         w-full h-[100%] mt-[5rem] sm:px-10 md:px-5 px-5"
@@ -31,7 +31,7 @@ function Hero() {
             className=" bg-cyan-500 px-4 py-4 w-[230px] my-5
            hover:bg-cyan-300 duration-200 transition-all rounded-md text-black font-medium"
           >
-            {btnText}
+         <a href="#blog">   {btnText}</a>
           </button>
         </div>
 

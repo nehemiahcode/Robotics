@@ -1,9 +1,9 @@
 export const MenuItems = [
-    { text: "Home", Url: "#" },
-    { text: "Service", Url: "#" },
-    { text: "Team", Url: "#" },
-    { text: "Blog", Url: "#" },
-    { text: "Contact", Url: "#" },
+    { text: "Home", Url: "#home" },
+    { text: "Service", Url: "#service" },
+    { text: "Team", Url: "#team" },
+    { text: "Blog", Url: "#blog" },
+    { text: "Get us", Url: "#get/us" },
   ];
 
 

@@ -1,8 +1,13 @@
 import React from "react";
 
 function Footer() {
+    const Links = [
+        {link:"", text:"Home"},
+        {link:"", text:"Services"},
+        {link:"", text:"Team"},
+    ]
   return (
-    <footer className=" w-full h-auto px-5 py-7 md:px-4 lg:px-10 grid  grid-cols-1 md:grid-cols-2 bg-black">
+    <footer className=" w-full h-auto px-5 py-7 md:px-4 lg:px-10 grid  grid-cols-1 md:grid-cols-2 bg-sky-700 ">
       <div className=" flex flex-col gap-2  py-2 ">
         <div className=" flex ">
           <h1 className=" font-Monessa text-white font-medium text-4xl">
@@ -21,14 +26,15 @@ function Footer() {
         <ion-icon name="logo-twitter"></ion-icon>
         <ion-icon name="logo-instagram"></ion-icon>
         </span>
+        <h1 className=" text-white text-md">@copywrite reserved 2023</h1>
       </div>
 
-      <div className=" flex flex-col ">
+      <div className=" flex flex-col justify-center ">
            <div className=" flex flex-col lg:flex-row  lg:justify-end gap-6 text-white">
            <h1 className=" text-2xl font-semibold lg:hidden">Links</h1>
-           <h1 className=" font-normal text-white hover:underline cursor-pointer">Home</h1>
-           <h1 className=" font-normal text-white hover:underline cursor-pointer">Services</h1>
-           <h1 className=" font-normal text-white hover:underline cursor-pointer">Team</h1>
+        {Links.map((Link, index) => (
+               <h1 key={index} className=" font-meduim text-xl text-white hover:underline cursor-pointer">{Link.text}</h1>
+        ))}
            </div>
 
       </div>

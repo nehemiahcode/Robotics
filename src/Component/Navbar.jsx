@@ -54,7 +54,7 @@ function Navbar() {
             <Fade cascade damping={0.03}>
               {MenuItems.map((items, index) => (
                 <li key={index}>
-                  <a href={items.Url} className=" hover:text-cyan-500">
+                  <a href={items.Url} onClick={handleOpendMenu} className=" hover:text-cyan-500">
                     {items.text}
                   </a>
                 </li>

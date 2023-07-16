@@ -12,11 +12,12 @@ function Services() {
     { icon: <MdOutlinePhonelink />, heading: "Technology and Science" },
     { icon: <GiStaticGuard />, heading: "Education and Knowledge" },
     { icon: <SiMediamarkt />, heading: "Swift like an eagle" },
-    { icon: <GiHealthNormal />, heading: "Health care asuured", span: true },
+    { icon: <GiHealthNormal />, heading: "Health care asuured",   margin:true, },
   ];
   return (
     <>
-      <section className=" bg-[rgba(0,0,0,0.93)] w-full ">
+      <section  className=" bg-[rgba(0,0,0,0.93)] w-full ">
+        <p id="service" className=" pt-12"></p>
        <Fade >
        <h1 className=" text-3xl lg:text-6xl text-center py-6 text-white font-Monessa font-medium">
           Services
@@ -39,14 +40,13 @@ function Services() {
         >
           {Cards.map((card, index) => (
            <Zoom key={index}>
-             <div
-          
-              className={` bg-[rgb(0,0,0)] w-[100%] sm:w-[80%] md:w-[100%] lg:w-[100%] mx-auto h-[280px] duration-200 hover:ring-2 hover:translate-y-[-1rem]
+             <div    
+              className={` bg-[rgb(0,0,0)] w-[100%] group  sm:w-[80%] md:w-[100%] lg:w-[100%] mx-auto h-[280px] duration-200 hover:ring-2 hover:translate-y-[-1rem]
               ring-sky-600 text-center px-2 pt-5 ${
-                card.span && " col-span-1 md:col-span-2"
+                card.margin && " md:ml-[50%] lg:m-0"
               } text-white rounded-lg shadow-lg flex flex-col  items-center`}
             >
-              <span className=" text-6xl text-sky-500 pb-3">{card.icon}</span>
+              <span className=" text-6xl group-hover:text-red-500 text-sky-500 pb-3">{card.icon}</span>
               <h1 className=" text-2xl font-Verdana">{card.heading}</h1>
               <p className=" text-lg py-3 px-3">
                 Metus nunc nec ridiculus aenean maximus integer platea letius ex
